@@ -25,7 +25,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+h7 {
   margin: 0 0 15px;
   color: #2b2b3d;
 }
@@ -66,6 +67,11 @@ h6 {
   line-height: 1.5em;
 }
 
+h7 {
+  font-size: 15px;
+  line-height: 1.0em;
+}
+
 /* --------------------------------------
  * LINK STYLE
  *------------------------------------------*/
@@ -97,9 +103,15 @@ p {
 }
 
 ul {
-  margin: 0;
-  padding: 0;
+  margin:0;
+  padding:0;
   list-style: none;
+}
+
+li {
+    font-size: 15px;
+    margin-left:18px;
+    list-style-type:circle;
 }
 
 /*------------------
@@ -173,8 +185,8 @@ button:focus,
 
 .left-col-block {
   overflow: hidden;
-  -webkit-flex: 1 0 0;
-  flex: 1 0 0;
+  -webkit-flex: 2 0 0;
+  flex: 2 0 0;
   position: relative;
   background: rgba(54, 7, 77, 0.8);
   border-right: 1px solid #eaeaea;
@@ -182,8 +194,8 @@ button:focus,
 }
 
 .right-col-block {
-  -webkit-flex: 2 0 0;
-  flex: 2 0 0;
+  -webkit-flex: 3 0 0;
+  flex: 3 0 0;
   position: relative;
   background: #ffffff;
 }
@@ -333,12 +345,12 @@ button:focus,
   display: block;
 }
 
-.social-icon li {
+.social-icon lin {
   display: inline-block;
   margin: 0 2px;
 }
 
-.social-icon li a {
+.social-icon lin a {
   display: block;
   font-size: 12px;
   color: #333333;
@@ -350,7 +362,7 @@ button:focus,
   border: 2px solid #eeeeee;
 }
 
-.social-icon li a:hover {
+.social-icon lin a:hover {
   border-color: #cccccc;
 }
 
@@ -472,7 +484,10 @@ button:focus,
   margin: 0;
   line-height: 1;
 }
-
+.content-item h7 {
+  margin: 0;
+  line-height:0;
+}
 .content-item small {
   color: #888888;
 }
@@ -492,6 +507,11 @@ button:focus,
 .header .content-item h4 {
   margin: 0;
   line-height: 1;
+  color: #ffffff;
+}
+.header .content-item h7 {
+  margin: 0;
+  line-height:0;
   color: #ffffff;
 }
 
